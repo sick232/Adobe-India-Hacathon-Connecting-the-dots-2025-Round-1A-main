@@ -1,0 +1,625 @@
+{
+    "title": "arXiv:1712.06657v1  cs.AI  18 Dec 2017",
+    "outline": [
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 1
+        },
+        {
+            "level": "H1",
+            "text": "Towards the Augmented Pathologist:",
+            "page": 1
+        },
+        {
+            "level": "H1",
+            "text": "Challenges of Explainable-AI in Digital Pathology",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "a.holzingerhci-kdd.org",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "b.mallehci-kdd.org",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "p.kiesebergsba-research.org",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "pmrothicg.tugraz.at",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "heimo.muellermedunigraz.at",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "robert.reihsmedunigraz.at",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "kurt.zatloukalmedunigraz.at",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "olten, Austria",
+            "page": 1
+        },
+        {
+            "level": "H2",
+            "text": "Abstract",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "Digital pathology is not only one of the most promising elds of diagnostic medicine, but",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "at the same time a hot topic for fundamental research. Digital pathology is not just the",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "transfer of histopathological slides into digital representations. The combination of dier-",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "ent data sources (images, patient records, and *omics data) together with current advances",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "in articial intelligence/machine learning enable to make novel information accessible and",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "quantiable to a human expert, which is not yet available and not exploited in current",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "medical settings. The grand goal is to reach a level of usable intelligence to understand the",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "data in the context of an application task, thereby making machine decisions transparent,",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "interpretable and explainable. The foundation of such an augmented pathologist needs",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "an integrated approach: While machine learning algorithms require many thousands of",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "training examples, a human expert is often confronted with only a few data points. In-",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "terestingly, humans can learn from such few examples and are able to instantly interpret",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "complex patterns. Consequently, the grand goal is to combine the possibilities of articial",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "intelligence with human intelligence and to nd a well-suited balance between them to en-",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "able what neither of them could do on their own. This can raise the quality of education,",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "diagnosis, prognosis and prediction of cancer and other diseases. In this paper we describe",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "some (incomplete) research issues which we believe should be addressed in an integrated",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "and concerted eort for paving the way towards the augmented pathologist.",
+            "page": 1
+        },
+        {
+            "level": "H2",
+            "text": "1. Introduction",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "1",
+            "page": 1
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 2
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 2
+        },
+        {
+            "level": "H3",
+            "text": "2",
+            "page": 2
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 3
+        },
+        {
+            "level": "H2",
+            "text": "2. From Microscopical Thinking to Digital Pathology",
+            "page": 3
+        },
+        {
+            "level": "H3",
+            "text": "3",
+            "page": 3
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 4
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 4
+        },
+        {
+            "level": "H3",
+            "text": "4",
+            "page": 4
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 5
+        },
+        {
+            "level": "H3",
+            "text": "5",
+            "page": 5
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 6
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 6
+        },
+        {
+            "level": "H3",
+            "text": "6",
+            "page": 6
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 7
+        },
+        {
+            "level": "H3",
+            "text": "7",
+            "page": 7
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 8
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 8
+        },
+        {
+            "level": "H3",
+            "text": "8",
+            "page": 8
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 9
+        },
+        {
+            "level": "H2",
+            "text": "3. Deep Learning",
+            "page": 9
+        },
+        {
+            "level": "H3",
+            "text": "9",
+            "page": 9
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 10
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 10
+        },
+        {
+            "level": "H3",
+            "text": "10",
+            "page": 10
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 11
+        },
+        {
+            "level": "H3",
+            "text": "11",
+            "page": 11
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 12
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 12
+        },
+        {
+            "level": "H3",
+            "text": "12",
+            "page": 12
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 13
+        },
+        {
+            "level": "H3",
+            "text": "13",
+            "page": 13
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 14
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 14
+        },
+        {
+            "level": "H2",
+            "text": "4. Learning from Heterogeneous Graphs",
+            "page": 14
+        },
+        {
+            "level": "H3",
+            "text": "14",
+            "page": 14
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 15
+        },
+        {
+            "level": "H2",
+            "text": "5. On Topological Data Mining from Medical Images",
+            "page": 15
+        },
+        {
+            "level": "H3",
+            "text": "15",
+            "page": 15
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 16
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 16
+        },
+        {
+            "level": "H2",
+            "text": "6. Interactive Machine Learning with the Expert-in-the-Loop",
+            "page": 16
+        },
+        {
+            "level": "H3",
+            "text": "16",
+            "page": 16
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 17
+        },
+        {
+            "level": "H3",
+            "text": "17",
+            "page": 17
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 18
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 18
+        },
+        {
+            "level": "H2",
+            "text": "7. Explainability of Machine Decisions",
+            "page": 18
+        },
+        {
+            "level": "H3",
+            "text": "18",
+            "page": 18
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 19
+        },
+        {
+            "level": "H2",
+            "text": "8. Privacy Aware Machine Learning",
+            "page": 19
+        },
+        {
+            "level": "H3",
+            "text": "19",
+            "page": 19
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 20
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 20
+        },
+        {
+            "level": "H3",
+            "text": "20",
+            "page": 20
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 21
+        },
+        {
+            "level": "H3",
+            "text": "21",
+            "page": 21
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 22
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 22
+        },
+        {
+            "level": "H3",
+            "text": "22",
+            "page": 22
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 23
+        },
+        {
+            "level": "H2",
+            "text": "9. Conclusion and Future Outlook",
+            "page": 23
+        },
+        {
+            "level": "H3",
+            "text": "23",
+            "page": 23
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 24
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 24
+        },
+        {
+            "level": "H2",
+            "text": "References",
+            "page": 24
+        },
+        {
+            "level": "H3",
+            "text": "24",
+            "page": 24
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 25
+        },
+        {
+            "level": "H3",
+            "text": "25",
+            "page": 25
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 26
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 26
+        },
+        {
+            "level": "H3",
+            "text": "26",
+            "page": 26
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 27
+        },
+        {
+            "level": "H3",
+            "text": "27",
+            "page": 27
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 28
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 28
+        },
+        {
+            "level": "H3",
+            "text": "28",
+            "page": 28
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 29
+        },
+        {
+            "level": "H3",
+            "text": "29",
+            "page": 29
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 30
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 30
+        },
+        {
+            "level": "H3",
+            "text": "30",
+            "page": 30
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 31
+        },
+        {
+            "level": "H3",
+            "text": "31",
+            "page": 31
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 32
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 32
+        },
+        {
+            "level": "H3",
+            "text": "32",
+            "page": 32
+        },
+        {
+            "level": "H3",
+            "text": "Explainable Artificial Intelligence in Digital Pathology",
+            "page": 33
+        },
+        {
+            "level": "H3",
+            "text": "33",
+            "page": 33
+        },
+        {
+            "level": "H3",
+            "text": "Holzinger, Malle, Kieseberg, Roth, M",
+            "page": 34
+        },
+        {
+            "level": "H3",
+            "text": "uller, Reihs, Zatloukal",
+            "page": 34
+        },
+        {
+            "level": "H3",
+            "text": "34",
+            "page": 34
+        }
+    ]
+}
